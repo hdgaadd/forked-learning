@@ -35,7 +35,21 @@
 
 # dubbo-rpc
 
+## dubbo-rpc-api
+
 ## dubbo-rpc-dubbo
+
+### DubboProtocol
+
+> [ˈprəʊtəkɒl]协议
+
+- ```
+  Thread.currentThread().setContextClassLoader(invoker.getUrl().getServiceModel().getClassLoader()); // 获取当前线程的引用，设置类加载器
+  ```
+
+- 
+
+
 
 # dubbo-compatible
 
@@ -59,3 +73,8 @@
   context = new ClassPathXmlApplicationContext(configPath.split("[,\\s]+"), false);
   ```
 
+
+
+# thinking
+
+- 按类名读懂类功能，按方法名读懂方法功能，了解未了解的方法，提升英文
