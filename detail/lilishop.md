@@ -2,4 +2,4 @@
 
 ## 架构图
 
-![lilishop](.\images\lilishop\lilishop.jpg)
+![lilishop](./images/lilishop/lilishop.jpg)
