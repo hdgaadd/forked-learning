@@ -263,7 +263,7 @@ seller-api
 xxl-job
 ```
 
-![lilishop](../images/lilishop/lilishop.jpg)
+![lilishop](E:\Z_relax\images\lilishop\lilishop.jpg)
 
 # linkwechat
 
@@ -299,9 +299,12 @@ com.linkwechat
 ├── linkwe-admin       // 后台服务
 ├── linkwe-ui          // 页面前端代码
 ├── linkwe--wecom      // 企业微信功能
+│       └── client // Forest接口，存储其他服务的访问接口
+│       └── handler // 转换处理器
+│       └── interface // 拦截器，存储其他服务被调用前，执行相应的前置通知
 ```
 
 # knowledge
 
-- 一个ThreadLocal就可保存多个线程的变量
+- 一个ThreadLocal对象就可保存**多个**线程的变量
 - iBatis也是持久层框架
