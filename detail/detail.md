@@ -263,7 +263,7 @@ seller-api
 xxl-job
 ```
 
-![lilishop](E:\Z_relax\images\lilishop\lilishop.jpg)
+![lilishop](../images/lilishop/lilishop.jpg)
 
 # linkwechat
 
@@ -304,7 +304,32 @@ com.linkwechat
 │       └── interface // 拦截器，存储其他服务被调用前，执行相应的前置通知
 ```
 
-# knowledge
+## knowledge
 
 - 一个ThreadLocal对象就可保存**多个**线程的变量
 - iBatis也是持久层框架
+
+
+
+
+
+
+
+# swaw
+
+
+
+# seckill
+
+## source
+
+- https://github.com/lyrric/seckill
+
+## thinking
+
+- **why可以实现秒杀增强**
+  - 源程序只使用一个线程进行秒杀，而seckill使用多线程
+    - 多线程比单线程来说，有更大的**机率**秒杀成功
+    - 在源程序的刷新也可以实现多线程，但每次刷新都会**获取**除了秒杀逻辑其他的数据，造成达到秒杀逻辑的时间**延长**，而seckill的线程更具有针对性
+    - 多线程触发服务器的**防重复提交**也不碍事，发生该事件，说明在服务器上的秒杀逻辑已经触发
+  - 源程序在点击秒杀后才获取服务器的时间戳，而seckill提前获取时间戳
